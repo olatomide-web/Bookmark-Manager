@@ -12,13 +12,48 @@
 <body class="overflow-x-hidden">
     
     <nav class="container relative mx-auto p-6">
-        <!--Flex container for nav items-->
+        <!--Flex container-->
         <div class="flex items-center justify-between space-x-20 my-6">
             <!--Logo-->
-
+            <div class="z-30">
+                <img id="logo" src="images/logo-bookmark.svg" alt="">
+            </div>
             <!--Menu items-->
+            <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+                <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
+                <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
+                <a href="#faq" class="tracking-widest hover:text-softRed">Faq</a>
+
+                <a href="" class="px-8 py-2 text-white bg-softRed rounded-lg border-2 border-softRed shadow-md hover:text-softRed hover:bg-white">Login</a>
+            </div>
         </div>
     </nav>
+
+    <!--Hero Section-->
+    <section id="hero">
+        <!--Container for image and text-->
+        <div class="container flex flex-col-reverse p-6 mx-auto lg:flex-row lg:mb-0">
+            <!--text-->
+            <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+                <h1 class="text-3xl font-semibold text-center lg:text-6xl lg:text-left">A Simple Bookmark Manager</h1>
+                <p class="max-w-md text-center mx-auto text-lg text-gray-400 lg:text-2xl lg:text-left lg:mx-0">A clean and simple interface to organize your favourite websites.
+                    Open a new browser tab and see your sites load instantly.Try it for free.
+                </p>
+
+                <!--button container-->
+                <div class="flex items-center justify-center w-full space-x-4 lg:justify-start">
+                    <a href="" class="text-sm p-4 font-semibold bg-softBlue border-2 border-softBlue text-white rounded shadow-md hover:bg-white hover:text-softBlue hover:border-softBlue md:text-base">Get it On Chrome</a>
+                    <a href="" class="text-sm p-4 font-semibold bg-gray-100 border-2 border-grayishBlue text-dark rounded shadow-md hover:bg-white hover:border-grayishBlue md:text-base">Get it On FireFox</a>
+                </div>
+            </div>
+            <!--Image-->
+            <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+                <div class="bg-hero"></div>
+                <img src="images/illustration-hero.svg" class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible" alt="">
+            </div>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
